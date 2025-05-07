@@ -35,8 +35,8 @@ export function VideoCard({ video }: VideoCardProps) {
             {video.title}
           </h3>
           <div className="flex justify-between text-xs text-slate-500">
-            <span>{video.uploader}</span>
-            <span>{video.views}</span>
+            <span>{video.author.name}</span>
+            <span>{video.stat.view}</span>
           </div>
         </CardContent>
       </Card>
